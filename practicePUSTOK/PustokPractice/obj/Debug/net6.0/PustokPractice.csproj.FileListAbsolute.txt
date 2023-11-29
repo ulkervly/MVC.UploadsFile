@@ -745,3 +745,14 @@ C:\Users\hp\OneDrive\Рабочий стол\pustokandallup\practicePUSTOK\Pusto
 C:\Users\hp\OneDrive\Рабочий стол\pustokandallup\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.pdb
 C:\Users\hp\OneDrive\Рабочий стол\pustokandallup\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.genruntimeconfig.cache
 C:\Users\hp\OneDrive\Рабочий стол\pustokandallup\practicePUSTOK\PustokPractice\obj\Debug\net6.0\ref\PustokPractice.dll
+C:\Users\II novbe\Desktop\MVC.UploadsFile\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.csproj.AssemblyReference.cache
+C:\Users\II novbe\Desktop\MVC.UploadsFile\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\II novbe\Desktop\MVC.UploadsFile\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.AssemblyInfoInputs.cache
+C:\Users\II novbe\Desktop\MVC.UploadsFile\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.AssemblyInfo.cs
+C:\Users\II novbe\Desktop\MVC.UploadsFile\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.csproj.CoreCompileInputs.cache
+C:\Users\II novbe\Desktop\MVC.UploadsFile\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\II novbe\Desktop\MVC.UploadsFile\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.RazorAssemblyInfo.cache
+C:\Users\II novbe\Desktop\MVC.UploadsFile\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.RazorAssemblyInfo.cs
+C:\Users\II novbe\Desktop\MVC.UploadsFile\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.dll
+C:\Users\II novbe\Desktop\MVC.UploadsFile\practicePUSTOK\PustokPractice\obj\Debug\net6.0\refint\PustokPractice.dll
+C:\Users\II novbe\Desktop\MVC.UploadsFile\practicePUSTOK\PustokPractice\obj\Debug\net6.0\PustokPractice.pdb

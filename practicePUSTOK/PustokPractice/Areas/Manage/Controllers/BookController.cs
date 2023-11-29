@@ -244,7 +244,7 @@ namespace PustokPractice.Areas.Manage.Controllers
             };
             existBook.BookImages.Add(bookImage1);
 
-            existBook.BookImages.RemoveAll(bimg=> !book.BookImages.Contains(bimg.id) && bimg.IsPoster==null);
+            existBook.BookImages.RemoveAll(bimg=> !book.BookImageIds.Contains(bimg.id) && bimg.IsPoster==null);
             if (book.ImageFiles != null)
             {
                 foreach (var item in book.ImageFiles)

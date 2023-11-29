@@ -1,0 +1,38 @@
+﻿@model List<Genre>
+@{
+    int counter = 0;
+}
+
+<div class="container-fluid">
+    <div class="row justify-content-between align-items-center">
+        <h1>Genres:</h1>
+        <a class="btn btn-primary" asp-action="create" asp-controller="genre">Create</a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">Name</th>
+           
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var genre in Model)
+            {
+                counter++;
+                <tr>
+                    <th scope="row">@counter</th>
+                    <td>@genre.Name</td>
+
+
+                    <td>
+                        <a asp-action="update" asp-controller="genre" asp-route-id="@genre.id" class="btn btn-warning">Update</a>
+                        <a asp-action="delete" asp-controller="genre" asp-route-id="@genre.id" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

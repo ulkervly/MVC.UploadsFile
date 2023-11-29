@@ -1,0 +1,15 @@
+﻿@model Tag
+<form method="post">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <h2 >Delete Tag: </h2>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">@Model.Name</li>
+            </ul>
+        </div>
+        <a class="btn btn-success" asp-action="Index" asp-controller="Tag">Back</a>
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </div>
+</form>

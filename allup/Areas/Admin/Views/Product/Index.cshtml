@@ -1,0 +1,46 @@
+﻿@model List<Product>;
+@{
+    int counter = 0;
+
+}
+<div class="container-fluid">
+    <div class="d-flex align-items-center justify-content-between">
+        <h1>Products  :</h1>
+        <a class="btn btn-primary" style="width:100px;" asp-action="Create" asp-controller="Product">create</a>
+    </div>
+
+    <table class="table table-hover table-striped mt-3 shadow">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">CostPrice</th>
+                <th scope="col">SalePrice</th>
+                <th scope="col">DiscountPercent</th>
+            
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                counter++;
+                <tr>
+                    <th scope="row">@counter</th>
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                    <td>@product.Costprice </td>
+                    <td>@product.Saleprice </td>
+                    <td>@product.DiscountPercent</td>
+                   
+                    <td>
+                        <a class="btn btn-warning" asp-action="Update" asp-controller="Product" asp-route-id="@product.Id">Update</a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-controller="Product" asp-route-id="@product.Id">Delete</a>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,22 @@
+﻿@model Book
+<form method="post">
+    <div class="container col-12 my-5">
+        <div class="card" style="width: 18rem;margin-bottom:10px;">
+            <div class="card-header">
+                <h3 > Delete:</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">@Model.Name</li>
+                <li class="list-group-item">@Model.Description</li>
+                <li class="list-group-item">@Model.Code</li>
+                <li class="list-group-item">@Model.Costprice</li>
+                <li class="list-group-item">@Model.Saleprice </li>
+                <li class="list-group-item">@Model.Tax </li>
+                <li class="list-group-item">@Model.DiscountPercent</li>
+
+            </ul>
+        </div>
+        <a class="btn " asp-action="Index" asp-controller="Book">Back</a>
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </div>
+</form>

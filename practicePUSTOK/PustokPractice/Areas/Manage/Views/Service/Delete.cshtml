@@ -1,0 +1,11 @@
+﻿@model Service
+<form method="post">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Title</h5>
+            <p class="card-text">@Model.Description</p>
+            <button type="submit" class="btn btn-primary">Delete</button>
+            <a asp-controller="Service" asp-action="Index" class="btn btn-primary">Go Back</a>
+        </div>
+</form>
+</div>

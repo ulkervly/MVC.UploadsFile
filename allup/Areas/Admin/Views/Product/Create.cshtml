@@ -1,0 +1,67 @@
+﻿@model Product
+<div class="container-fluid">
+    <h1>Create:</h1>
+    <div class="row justify-content-center flex-column align-items-center">
+        <form class="col-md-8"  method="post">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Name">Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group col-md-12">
+                <label asp-for="Description">Description</label>
+                <textarea asp-for="Description" class="form-control" rows="6" placeholder="Description"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+          
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label asp-for="Costprice">CostPrice</label>
+                    <input asp-for="Costprice" class="form-control" placeholder="CostPrice">
+                    <span asp-validation-for="Costprice" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="Saleprice">Saleprice</label>
+                    <input asp-for="Saleprice" class="form-control" placeholder="SalePrice">
+                    <span asp-validation-for="Saleprice" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="DiscountPercent">Discount</label>
+                    <input asp-for="DiscountPercent" class="form-control" placeholder="Discount">
+                    <span asp-validation-for="DiscountPercent" class="text-danger"></span>
+                </div>
+              
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="TagIds">Tags</label>
+                    <select asp-for="TagIds" class="form-select" aria-label="Default select example" asp-items="@(new SelectList(ViewBag.Tags,"Id","Name"))">
+                    </select>
+                    <span asp-validation-for="TagIds" class="text-danger"></span>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-6">
+                    <label asp-for="ProductPosterImageFile" class="form-label">ProductPosterImageFile</label>
+                    <input asp-for="ProductPosterImageFile" class="form-control" placeholder="ProductPosterImageFile">
+                    <span asp-validation-for="ProductPosterImageFile"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="ProductHoverImageFile" class="form-label">ProductHoverImageFile</label>
+                    <input asp-for="ProductHoverImageFile" class="form-control" placeholder="ProductHoverImageFile">
+                    <span asp-validation-for="ProductHoverImageFile"></span>
+                </div>
+                <div class="col-md-12">
+                    <label asp-for="ImageFiles" class="form-label">ImageFiles</label>
+                    <input asp-for="ImageFiles" class="form-control" placeholder="ImageFiles">
+                    <span asp-validation-for="ImageFiles"></span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+             <a class="btn btn-primary" asp-action="Index" asp-controller="Product">Back</a>
+        </form>
+    </div>
+</div>

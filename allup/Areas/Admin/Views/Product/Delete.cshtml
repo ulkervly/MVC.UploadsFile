@@ -1,0 +1,20 @@
+﻿@model Product;
+<form method="post">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <h2 style="font-weight:600">Delete: </h2>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">@Model.Name</li>
+                <li class="list-group-item">@Model.Description</li>
+                <li class="list-group-item">@Model.Costprice </li>
+                <li class="list-group-item">@Model.Saleprice </li>
+                <li class="list-group-item">@Model.DiscountPercent </li>
+
+            </ul>
+        </div>
+        <a class="btn btn-success" asp-action="Index" asp-controller="Product">Back</a>
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </div>
+</form>

@@ -139,11 +139,13 @@ namespace ALLUP2.Areas.Admin.Controllers
                     _context.ProductImages.Add(bi);
                 }
 
-                _context.Products.Add(Product);
-                _context.SaveChanges();
-
-                return RedirectToAction("index");
+                
             }
+            _context.Products.Add(Product);
+            _context.SaveChanges();
+
+            return RedirectToAction("index");
+        }
             public IActionResult Update(int id)
             {
 
@@ -224,6 +226,6 @@ namespace ALLUP2.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
 
-        }
+        
     }
 }
